@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | FIREBROS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>FIRE<span>BROS</span></h1>
+                <p>Premium Fast Food Experience</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin/login.html" class="admin-link">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu-hero">
+        <div class="container">
+            <h1>Our Premium Menu</h1>
+            <p>Chef-crafted dishes made with the finest ingredients</p>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="burgers">Burgers</button>
+                <button class="category-btn" data-category="salads">Salads</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- 汉堡类 -->
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-image">
+                        <img src="image/burger1.jpg" alt="Truffle Burger">
+                    </div>
+                    <div class="item-details">
+                        <h3>Truffle Burger</h3>
+                        <p>Wagyu beef patty, black truffle aioli, aged cheddar, brioche bun</p>
+                        <span class="price">RM14.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-image">
+                        <img src="image/burger.jpg" alt="Avocado Burger">
+                    </div>
+                    <div class="item-details">
+                        <h3>Avocado Burger</h3>
+                        <p>Grass-fed beef, fresh avocado, pepper jack cheese, chipotle mayo</p>
+                        <span class="price">RM12.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- 沙拉类 -->
+                <div class="menu-item" data-category="salads">
+                    <div class="item-image">
+                        <img src="image/salad1.jpg" alt="Superfood Salad">
+                    </div>
+                    <div class="item-details">
+                        <h3>Superfood Salad</h3>
+                        <p>Kale, quinoa, avocado, pomegranate, hemp seeds, lemon-tahini dressing</p>
+                        <span class="price">RM12.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="salads">
+                    <div class="item-image">
+                        <img src="image/salad.jpg" alt="Artisan Caesar Salad">
+                    </div>
+                    <div class="item-details">
+                        <h3>Artisan Caesar</h3>
+                        <p>Romaine, parmesan crisps, house-made croutons, anchovy-free dressing</p>
+                        <span class="price">RM10.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- 小食类 -->
+                <div class="menu-item" data-category="sides">
+                    <div class="item-image">
+                        <img src="image/fried.jpg" alt="Truffle Fries">
+                    </div>
+                    <div class="item-details">
+                        <h3>Truffle Fries</h3>
+                        <p>Hand-cut potatoes, truffle oil, parmesan, herbs</p>
+                        <span class="price">RM6.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="sides">
+                    <div class="item-image">
+                        <img src="image/fried1.jpg" alt="Sweet Potato Fries">
+                    </div>
+                    <div class="item-details">
+                        <h3>Sweet Potato Fries</h3>
+                        <p>With chipotle aioli dipping sauce</p>
+                        <span class="price">RM5.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- 饮料类 -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image">
+                        <img src="image/lemon.jpg" alt="Artisan Lemonade">
+                    </div>
+                    <div class="item-details">
+                        <h3>Artisan Lemonade</h3>
+                        <p>House-made with organic lemons and lavender</p>
+                        <span class="price">RM4.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image">
+                        <img src="image/cola.jpg" alt="Craft Soda">
+                    </div>
+                    <div class="item-details">
+                        <h3>Craft Soda</h3>
+                        <p>Small-batch, natural ingredients, choose from 5 flavors</p>
+                        <span class="price">RM3.99</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 方法1：固定尺寸（推荐） -->
+        <div class="item-image">
+            <img src="images/burgers/truffle-burger.jpg" 
+                alt="Truffle Burger"
+                width="400" 
+                height="300">
+        </div>
+
+        <!-- 方法2：CSS控制 -->
+        <style>
+            .item-image img {
+                width: 100%;  /* 充满容器 */
+                height: 250px; /* 固定高度 */
+                object-fit: cover; /* 关键属性：保持比例裁剪 */
+                object-position: center; /* 聚焦图片中央 */
+            }
+        </style>
+    </section>
+
+    <!-- 购物车侧边栏和页脚保持不变 -->
+    <section class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span>$0.00</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>FireBros</h3>
+                <p>Redefining fast food with premium ingredients and chef-driven recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Premium Lane<br>Food City, FC 12345</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@FireBros.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 TheWorkingBros. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
